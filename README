@@ -1,0 +1,21 @@
+FIRMWARE
+========
+
+1. Make the image writeable
+
+2. cp -r /android/system/etc/firmware/mt6627/ /etc/firmware/
+
+
+
+BUILD & EXECUTE
+===============
+
+1. You need a 15.04 chroot
+
+2. Build:
+
+   ./build.sh
+
+3. Copy to the phone, run and tune to 107 MHz:
+
+   ./deploy_and_run.sh powerup 107000
